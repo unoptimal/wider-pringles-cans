@@ -12,7 +12,7 @@
             <div class="left-column">
                 <!-- Banner and Title -->
                 <div class="top-content">
-                    <img class="logo" src="../src/assets/desktop.svg" alt="Wider Pringles Logo">
+                    <img class="logo" src="assets/desktop.svg" alt="Wider Pringles Logo">
                 </div>
                 <!-- Description for Mobile -->
                 <div class="description mobile-desc">
@@ -26,9 +26,9 @@
 
             <!-- Right Column for Images -->
             <div class="right-column">
-                <div class="image" style="background-image: url('../src/assets/three.webp')"></div>
-                <div class="image" style="background-image: url('../src/assets/in.webp')"></div>
-                <div class="image" style="background-image: url('../src/assets/compare.webp')"></div>
+                <div class="image" style="background-image: url('assets/three.webp')"></div>
+                <div class="image" style="background-image: url('assets/in.webp')"></div>
+                <div class="image" style="background-image: url('assets/compare.webp')"></div>
             </div>  
 
             <!-- Description for Desktop -->

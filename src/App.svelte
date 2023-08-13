@@ -28,7 +28,7 @@
       <About show={showAbout} onClose={toggleAbout} />
   </div>
   <div bind:this={videoWrapper} class="video-wrapper" on:click={loadVideo}>
-    <img src="../src/assets/vid.webp" alt="Click to play video" style="width:100%;">
+    <img src="assets/vid.webp" alt="Click to play video" style="width:100%;">
   </div>
   
 </div>
@@ -47,7 +47,7 @@
   }
 
   :global(body) {
-    background-image: url('../src/assets/BG.webp');
+    background-image: url('assets/BG.webp');
 }
 
 
@@ -89,7 +89,7 @@
   /* Mobile styles */
   @media (max-width: 768px) {
     :global(body) {
-      background-image: url('../src/assets/MOBILEBG.webp');
+      background-image: url('assets/MOBILEBG.webp');
     }
 
     .video-wrapper {
