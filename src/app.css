@@ -1,7 +1,9 @@
 @font-face {
-  font-family: 'PuffinDisplayExtraBold';
+  font-family: 'PuffinDisplay';
   src: url('/fonts/PuffinDisplay-ExtraBold.otf') format('opentype');
+  font-display: swap; 
 }
+
 
 :root {
   font-family: 'PuffinDisplayExtraBold', sans-serif;

@@ -28,7 +28,7 @@
       <About show={showAbout} onClose={toggleAbout} />
   </div>
   <div bind:this={videoWrapper} class="video-wrapper" on:click={loadVideo}>
-    <img src="assets/vid.webp" alt="Click to play video" style="width:100%;">
+    <img src="assets/vid.webp" alt="Click to play video" width='100%;'>
   </div>
   
 </div>
