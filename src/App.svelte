@@ -47,7 +47,7 @@
   }
 
   :global(body) {
-    background-image: url('assets/BG.webp');
+    background-image: url('/assets/BG.webp');
 }
 
 
@@ -89,7 +89,7 @@
   /* Mobile styles */
   @media (max-width: 768px) {
     :global(body) {
-      background-image: url('assets/MOBILEBG.webp');
+      background-image: url('/assets/MOBILEBG.webp');
     }
 
     .video-wrapper {
