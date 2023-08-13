@@ -2,19 +2,35 @@
   import About from "./About.svelte";
 
   let showAbout = false;
+  let videoWrapper;
+
   function toggleAbout() {
       showAbout = !showAbout;
   }
+
+  function loadVideo() {
+    const iframe = document.createElement('iframe');
+    iframe.src = "https://www.youtube.com/embed/4TBWZnceI9o";
+    iframe.title = "Introducing: Wider Pringles Cans";
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    iframe.allowFullscreen = true;
+    iframe.style ="position:absolute;top:0;left:0;width:100%;height:100%;";
+  
+    videoWrapper.innerHTML = ''; 
+    videoWrapper.appendChild(iframe);
+  }
 </script>
+
 
 <div class="container">
   <div class='more'>
       <button on:click={toggleAbout}>MORE</button>
       <About show={showAbout} onClose={toggleAbout} />
   </div>
-  <div class="video-wrapper">
-    <iframe src="https://www.youtube.com/embed/4TBWZnceI9o" title="Introducing: Wider Pringles Cans" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; margin: 0;"></iframe>
+  <div bind:this={videoWrapper} class="video-wrapper" on:click={loadVideo}>
+    <img src="../src/assets/vid.webp" alt="Click to play video" style="width:100%;">
   </div>
+  
 </div>
 
 <style>
@@ -61,14 +77,6 @@
  
 }
 
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
 
 .more{
   position: absolute;
